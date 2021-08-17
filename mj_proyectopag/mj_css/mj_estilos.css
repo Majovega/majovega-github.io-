@@ -1,0 +1,284 @@
+/***------Estilos generales de Limo Makeup------***/
+/*------Inicio estilos generales------*/
+* {margin: 0; padding: 0;}
+h1{font-family: 'Crimson Text', Times New Roman,  serif; font-style: italic; font-weight:250; font-size: 40px; color: #16817A; text-align: center;margin-top: 20px;;}
+h2{font-family: 'Quicksand', Bebas, sans-serif; font-size: 20px; font-weight: 400; color:#024249; text-align: center; margin-bottom: 20px;  }
+h3{font-family: 'Quicksand', Bebas, sans-serif; color:#024249 ; font-weight: 400; font-size: 20px }
+p{font-family: 'Quicksand', Bebas, sans-serif; color:#024249 ; font-weight: 300; font-size: 16px; }
+
+
+a:link {font-family: 'Quicksand', Bebas, sans-serif; color: #024249; font-size: 16px; font-weight: 200; padding: 10px; }
+
+a:visited {background-color: white;}
+
+a:hover {font-family: 'Quicksand', Bebas, sans-serif; color:#F208B4 ; text-decoration: underline; font-size: 16px; font-weight: 200; }
+
+a:active {font-family: 'Quicksand', Bebas, sans-serif; color:#F208B4 ; text-decoration: underline; font-size: 16px; font-weight: 200; background-color: white;}
+
+/*------Final estilos generales------*/
+
+
+
+
+
+
+
+/*------Inicio menu hamburguesa------*/
+.menumovil{color:#024249; right: 15%; top: 12%; position: absolute;  }
+
+.overlay {
+  height: 100%;
+width:0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;}
+
+
+/*------Final menu hamburguesa------*/
+
+
+
+
+
+
+
+
+  /*--------Inicio del grid-------*/
+.grid-container {display: grid;
+    grid-template-areas: 
+    'nav'
+    'main'
+    'info'    
+    'footer';
+}
+
+nav {grid-area: nav; height: 55px; background-color:#F9F2FB;}
+
+.navfijo{height: 55px; background-color:#F9F2FB; position: fixed; padding: 5px;
+  width: 100%; top: 0;}
+
+
+/*--------Index-------*/
+
+
+.iconocar{float: right; margin-bottom: 4%; margin-right: 2%; }
+
+.iconofooter{align-content: center; padding: 7%; }
+
+.topnav-right {display: none;}
+
+.logo{ padding: 6px; padding-top: 8px}
+
+
+.informacion{grid-area: info; }
+
+.cuadrofondo{background-color: #AACFCF; height:70%; padding: 2%; margin: 4%; text-align: center; }
+
+.imagenfondo{background-image: url(../mj_img/fondo.jpg); background-repeat: no-repeat; background-size: cover;  background-color: white; height: 59vh;}
+
+main {grid-area: main; background-color:white;}
+
+footer{ grid-area: footer; background-color: cadetblue; height: 15%;  }
+
+
+.pietexto {color: white;  font-family: 'Quicksand'; font-size: 11px; text-align: center; padding: 1%;}
+
+/*--------Servicios-------*/
+
+.flex-item-ser{background-color:#AACFCF; padding: 5%; margin-top: 5%; margin-bottom: 5%; }
+
+
+
+
+
+
+
+.centro{text-align: center; padding: 2px; align-content: center; margin-left: 7%; margin-right: 7%;  }
+
+.boton{ margin: 5%;}
+
+.formulario{ padding: 2%; width:auto;height: 100vh;  }
+
+
+
+
+/*--------Inicio de productos-------*/
+.flex-subnav-container {flex-direction: column; margin: 5%; }
+.flex-subnav-container:hover {
+  box-shadow: 2px 8px 8px 2px rgba(0,0,0,0.2);
+}
+ 
+.flex-item{margin: 5%; padding: 20px;  }
+
+.flex-item-tex{text-align: center; margin: 5%; padding-top: 1%; }
+
+.flex-item-prec {margin: 5%;  }
+/*--------Final de productos-------*/
+
+
+
+/*--------Contacto-------*/
+
+.contacto{margin-top: 6%;}
+.centrocont{display: flex;margin: auto; margin-top: 5%; margin-left: 20%; }
+
+/*--------Final de contacto-------*/
+
+
+/*--------Final del grid-------*/
+
+
+
+
+
+
+
+
+
+
+
+/*------ESCRITORIO------*/
+
+
+/*------Inicio del media querie------*/
+@media only screen and (min-width: 600px) {
+    
+    /*-----Estilos generales del media----*/
+    h1{ font-size: 75px;}
+    h2{ font-size: 28px; }
+    
+    /*-----Final estilos generales del media----*/
+    
+
+    /*-----Grid para desktop----*/
+    .grid-container {display: grid;
+    grid-template-areas: 
+    'menu menu'
+    'main main'
+    'info info'
+    'footer footer';
+    }
+    
+  /*----- estilos generales del escritorio----*/
+    .titulo{ float: right; width: 30%;  padding: 10px; margin-top: 20%; margin-right: 8%; margin-left: 88%; background-color: white;}
+    
+    .imagenfondo{background-size: cover; height: 140vh; }
+    
+    .cuadrofondo{height: 27%; margin-top: 3; margin-left: 15%; margin-right: 15%;  padding: 2%; }
+    
+    
+     /*----- Final estilos generales del escritorio----*/
+  
+    
+    
+    
+/*-----Servicios----*/
+
+
+.flex-item-ser{background-color:#AACFCF; padding: 5%; margin: 7%; }
+
+    
+/*-----Final Servicios----*/
+     
+    
+    
+    
+    
+    /*-----Contacto----*/
+    
+    .centrocont{margin-left: 40%; }
+    .contacto{ margin-top: 4%;}
+    .wa{margin-left:3%;}
+    /*-----Final contacto----*/
+    
+    
+    
+    
+/*-------------Inico de productos ---------*/
+.flex-subnav-container {display: flex; flex-direction: row; justify-content: center; }
+
+
+.flex-item{ margin: 5%; padding: 20px;  }
+
+.flex-item-tex{text-align: center; margin: 10%; padding-top: 6%; }
+
+.flex-item-prec {margin: 10%; padding-top: 7%; }
+/*--------Final de productos-------*/
+
+
+
+
+    
+    
+   
+  /*-----Final Grid para desktop----*/
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+/*------Inicio menu hamburguesa------*/
+    
+    
+    
+    .topnav-right {display: flex;
+  float: right;
+    padding: 1%;
+}
+    .menumovil{display: none;}
+
+}
+
+/*-----Inicio Media Querie Hamburguesa para movil----*/
+    
+@media screen and (min-height: 600px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*-----Final Media Querie Hamburguesa para movil----*/
+    
+/*-----Final media querie para desktop----*/
+
+
+   
+    
